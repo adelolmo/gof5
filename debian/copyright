@@ -1,0 +1,8 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: gof5
+Source: https://github.com/kayrus/gof5
+
+Files: *
+Copyright: 2020 kayrus
+Author: kayrus
+License: Apache-2.0

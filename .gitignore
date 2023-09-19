@@ -2,3 +2,12 @@ gopath
 bin
 cookies
 routes.yaml
+
+.idea
+
+debian/files
+debian/gof5.debhelper.log
+debian/gof5.substvars
+debian/debhelper-build-stamp
+debian/gof5
+debian/.debhelper

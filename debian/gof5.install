@@ -1,0 +1,2 @@
+org.freedesktop.resolve1.pkla /var/lib/polkit-1/localauthority/50-local.d/
+bin/gof5 /usr/bin/

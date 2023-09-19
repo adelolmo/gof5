@@ -1,0 +1,5 @@
+gof5 (0.1.4) unstable; urgency=medium
+
+  * create debian package
+
+ -- Andoni del Olmo <andoni.delolmo@gmail.com>  Wed, 07 Sep 2023 22:03:39 +0100
