@@ -2,7 +2,7 @@
 
 case "$1" in
     remove)
-		systemctl restart polkit.service
+		deb-systemd-invoke restart polkit.service
     ;;
 
     purge|disappear|upgrade|failed-upgrade|abort-install|abort-upgrade)
@@ -12,5 +12,5 @@ case "$1" in
         echo "$0: didn't understand being called with \`$1'" 1>&2
     ;;
 esac
-
+#DEBHELPER#
 exit 0
