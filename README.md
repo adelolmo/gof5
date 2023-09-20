@@ -4,6 +4,13 @@
 
 * an application must be executed under a privileged user
 
+## Debian Package
+
+Run the command bellow to build the debian package:
+```shell
+gbp buildpackage --no-sign --git-ignore-branch --git-ignore-new
+```
+
 ## Linux
 
 If your Linux distribution uses [systemd-resolved](https://www.freedesktop.org/software/systemd/man/systemd-resolved.service.html) or [NetworkManager](https://wiki.gnome.org/Projects/NetworkManager) you can run gof5 without sudo privileges.

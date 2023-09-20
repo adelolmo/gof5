@@ -1,6 +1,10 @@
 #!/usr/bin/make -f
 
 export DH_VERBOSE=1
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+BIN=gof5
+mandir:= $(CURDIR)/debian/$(BIN)/usr/share/man
 
 %:
 	dh $@
@@ -9,4 +13,9 @@ override_dh_auto_test:
 
 override_dh_auto_build:
 	dh_auto_build
-	mv bin/gof5_linux_* bin/gof5
+	mv bin/$(BIN)_linux_* bin/$(BIN)
+
+override_dh_auto_install:
+	mkdir -p $(mandir)/man1
+	go-md2man -in debian/man.1.md -out $(mandir)/man1/$(BIN).1
+	dh_auto_install
