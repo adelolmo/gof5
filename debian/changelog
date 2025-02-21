@@ -1,3 +1,10 @@
+gof5 (0.1.4~ado2) unstable; urgency=medium
+
+  * Initialize Config.Routes, when config routes are empty
+  * Tolerate case when VPN profile can not be retrieved
+
+ -- Andoni del Olmo <andoni.delolmo@gmail.com>  Mon, 17 Feb 2025 17:31:20 +0100
+
 gof5 (0.1.4~ado1) unstable; urgency=medium
 
   * Support wintun 0.14
