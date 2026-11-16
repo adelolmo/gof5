@@ -1,3 +1,18 @@
+gof5 (0.1.5~ado1) unstable; urgency=medium
+
+  * Bump github.com/pion/dtls/v2 from 2.0.8 to 2.2.4 by @dependabot in #48
+  * Bump golang.org/x/net from 0.5.0 to 0.17.0 by @dependabot in #54
+  * Bump golang.org/x/crypto from 0.14.0 to 0.17.0 by @dependabot in #55
+  * Bump golang.org/x/net from 0.17.0 to 0.23.0 by @dependabot in #57
+  * Bump golang.org/x/crypto from 0.21.0 to 0.31.0 by @dependabot in #58
+  * Bump golang.org/x/net from 0.33.0 to 0.36.0 by @dependabot in #60
+  * Parse f5vpn urls by @fwiesel in #44
+  * Bump golang.org/x/net from 0.36.0 to 0.38.0 by @dependabot in #61
+  * Avoid duplicate search entries by @fwiesel in #43
+  * GH-A: use github actions releaser by @kayrus in #62
+
+ -- Andoni del Olmo <andoni.delolmo@gmail.com> Mon, 16 Nov 2026 15:56:03 +0100
+
 gof5 (0.1.4~ado2) unstable; urgency=medium
 
   * Initialize Config.Routes, when config routes are empty
