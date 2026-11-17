@@ -2,12 +2,18 @@ Source: gof5
 Section: net
 Priority: optional
 Maintainer: Andoni del Olmo <andoni.delolmo@gmail.com>
-Build-Depends: debhelper (>= 9), golang-go:native (>= 1.3.3), dh-golang, go-md2man
+Build-Depends: debhelper (>= 10~), golang-go:native (>= 1.3.3), dh-golang, go-md2man
 Standards-Version: 4.3.0
 Homepage: https://github.com/kayrus/gof5
 
 Package: gof5
 Architecture: any
 Priority: optional
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Open Source F5 BIG-IP VPN client
+ gof5 is a client for F5 BIG-IP SSL VPN networks (formerly known as
+ FirePass). It establishes a PPP tunnel over SSL, supporting both
+ DTLS and TLS tunnels, and takes care of routes, DNS resolvers and
+ the VPN tunnel interface. On Linux it integrates with
+ systemd-resolved and NetworkManager, and can run unprivileged when
+ the binary is given the appropriate capabilities.

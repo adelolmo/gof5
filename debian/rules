@@ -3,16 +3,29 @@
 export DH_VERBOSE=1
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
+# gof5 uses Go modules with vendored dependencies, but dh-golang only
+# supports the legacy GOPATH mode (GO111MODULE=off, GOPATH=obj-*,
+# GOTOOLCHAIN=local), which breaks the "make build" invocation. Build
+# with the plain makefile build system instead, so the default Go
+# module environment is used: dependencies come from vendor/ and
+# GOTOOLCHAIN=auto lets the go command switch to the go >= 1.25
+# toolchain required by go.mod (Debian ships go 1.24).
+export GO111MODULE=on
+export GOFLAGS=-mod=vendor -buildmode=pie
+export GOTOOLCHAIN=auto
+
 BIN=gof5
 mandir:= $(CURDIR)/debian/$(BIN)/usr/share/man
 
 %:
 	dh $@
 
+override_dh_auto_configure:
+
 override_dh_auto_test:
 
 override_dh_auto_build:
-	dh_auto_build
+	dh_auto_build --buildsystem=makefile
 	mv bin/$(BIN)_linux_* bin/$(BIN)
 
 override_dh_auto_install:

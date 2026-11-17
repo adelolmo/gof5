@@ -2,6 +2,7 @@ gopath
 bin
 cookies
 routes.yaml
+vendor
 
 .idea
 

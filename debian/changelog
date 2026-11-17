@@ -11,7 +11,7 @@ gof5 (0.1.5~ado1) unstable; urgency=medium
   * Avoid duplicate search entries by @fwiesel in #43
   * GH-A: use github actions releaser by @kayrus in #62
 
- -- Andoni del Olmo <andoni.delolmo@gmail.com> Mon, 16 Nov 2026 15:56:03 +0100
+ -- Andoni del Olmo <andoni.delolmo@gmail.com>  Mon, 16 Nov 2026 15:56:03 +0100
 
 gof5 (0.1.4~ado2) unstable; urgency=medium
 
